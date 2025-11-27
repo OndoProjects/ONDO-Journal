@@ -1,14 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Nav from './src/components/Nav'; // Importera Nav-komponenten
+import Nav from './src/components/Nav';
 import Header from './src/components/Header';
+import ProfileDate from './src/components/Date-container';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>ONDO Journal! 🚀</Text>
-      <StatusBar style="auto" />
       <Header />
+      <ProfileDate
+        profileImage={require('./assets/icons/profile.png')}
+        dayNumber={'26'}
+        dayName={'Monday'}
+        month={'Aug'}
+      />
       <Nav />
     </View>
   );
@@ -19,12 +24,5 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#bababa',
     alignItems: 'center',
-    justifyContent: 'center',
-    position: 'relative', // Viktigt för absolut-positionerad Nav
-    paddingBottom: 60,    // Ge plats åt Nav
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
+  }
 });
