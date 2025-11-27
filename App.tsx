@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Nav from './src/components/Nav'; // Importera Nav-komponenten
+import Header from './src/components/Header';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>ONDO Journal! 🚀</Text>
       <StatusBar style="auto" />
+      <Header />
       <Nav />
     </View>
   );
