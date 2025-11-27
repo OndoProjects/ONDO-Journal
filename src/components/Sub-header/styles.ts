@@ -2,17 +2,13 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
-    position: 'absolute', 
-    top: 0,               
-    left: 0,
-    right: 0,
-    paddingVertical: 80,
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: 32,
   },
   title: {
     color: '#000',
     fontSize: 26,
-    fontWeight: 'thin',
+    fontWeight: 'bold',
   },
 });

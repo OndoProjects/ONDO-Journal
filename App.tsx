@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Nav from './src/components/Nav';
 import Header from './src/components/Header';
 import ProfileDate from './src/components/Date-container';
+import SubHeader from './src/components/Sub-header';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         dayName={'Monday'}
         month={'Aug'}
       />
+      <SubHeader />
       <Nav />
     </View>
   );
