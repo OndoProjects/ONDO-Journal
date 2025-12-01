@@ -12,13 +12,13 @@ interface ProfileDateProps {
 const ProfileDate = ({ profileImage, dayNumber, dayName, month }: ProfileDateProps) => {
   return (
     <View style={styles.container}>
-      {/* Profilbild vänster */}
+      {/* Profilbild */}
       <Image source={profileImage} style={styles.profileImage} />
 
-      {/* Datum nummer */}
+      {/* Datum */}
       <Text style={styles.dayNumber}>{dayNumber}</Text>
 
-      {/* Dag och månad staplade */}
+      {/* Dag och månad */}
       <View style={styles.dayMonthContainer}>
         <Text style={styles.dayMonth}>{dayName}</Text>
         <Text style={styles.dayMonth}>{month}</Text>

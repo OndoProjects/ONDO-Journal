@@ -5,6 +5,7 @@ import Nav from '../../../src/components/Nav';
 import Header from '../../../src/components/Header';
 import ProfileDate from '../../../src/components/Date-container';
 import SubHeader from '../../../src/components/Sub-header';
+import MoodHistoryContainer from '../../components/MoodHistoryContainer';
 
 export default function HomeScreen() {
   return (
@@ -17,6 +18,7 @@ export default function HomeScreen() {
         month={'Aug'}
       />
       <SubHeader />
+      <MoodHistoryContainer />
       <Nav />
     </View>
   );
