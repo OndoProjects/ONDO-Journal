@@ -8,7 +8,7 @@ import styles from "./styles";
 interface ImageData {
 id: string;
 uri: string;
-dayIndex: number; // 1-7
+dayIndex: number; 
 }
 
 
@@ -27,6 +27,8 @@ const [images, setImages] = useState<ImageData[]>([
   { id: '1', uri: require('../../../assets/images/image.png'), dayIndex: 1 },
   { id: '2', uri: require('../../../assets/images/image2.png'), dayIndex: 1 },
   { id: '3', uri: require('../../../assets/images/image3.png'), dayIndex: 3 },
+  { id: '4', uri: require('../../../assets/images/image4.png'), dayIndex: 3 },
+  { id: '5', uri: require('../../../assets/images/image5.png'), dayIndex: 3 },
 ]);
 
 

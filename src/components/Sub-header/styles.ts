@@ -5,10 +5,12 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 32,
+    padding: 3,
   },
   title: {
     color: '#000',
     fontSize: 26,
     fontWeight: 'bold',
+    marginBottom: 6,
   },
 });
