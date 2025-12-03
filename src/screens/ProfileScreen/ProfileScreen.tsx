@@ -17,7 +17,7 @@ export default function HomeScreen() {
         dayName={'Monday'}
         month={'Aug'}
       />
-      <SubHeader />
+      <SubHeader title="Check My Moodhistory" />
       <MoodHistoryContainer />
       <Nav />
     </View>
